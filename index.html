@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>¿Qué personaje de Jujutsu Kaisen eres?</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="estilos_testbuzzfeed.css">
+</head>
+<body>
+	<div class="container p-2">
+		<h1 id="mainTitulo" class="display-3 text-center"><b>¿Qué personaje de Jujutsu Kaisen eres?</b></h1>
+		<p id="mainSubTitulo" class="text-center">Elige cuales de las respuestas se parecen más a tu estilo y te diremos que personaje eres ;)</p>
+		<img src="./images/jujutsu_foto.jpg" class="img-fluid mx-auto d-block rounded">
+		<br><hr><br>
+		<h1>¿Cuál es tu color preferido?</h1>
+		<p class="lead">Elige el color que mejor defina tu personalidad</p>
+		<div class="row">
+			<div class="col-sm-6 col-md-4 p-2 d-grid gap-2">
+				<button type="button" class="btn btn-primary p1" value="azul" onclick="selectAndCalculate('p1', 'azul');">Azul</button>
+			</div>
+			<div class="col-sm-6 col-md-4 p-2 d-grid gap-2">
+				<button type="button" class="btn btn-danger p1" value="rojo" onclick="selectAndCalculate('p1', 'rojo');">Rojo</button>
+			</div>
+			<div class="col-sm-6 col-md-4 p-2 d-grid gap-2">
+				<button type="button" class="btn btn-success p1" value="verde" onclick="selectAndCalculate('p1', 'verde');">Verde</button>
+			</div>
+			<div class="col-sm-6 col-md-4 p-2 d-grid gap-2">
+				<button type="button" class="btn btn-warning p1" value="amarillo" onclick="selectAndCalculate('p1', 'amarillo');">Amarillo</button>
+			</div>
+			<div class="col-sm-6 col-md-4 p-2 d-grid gap-2">
+				<button type="button" class="btn btn-dark p1" value="negro" onclick="selectAndCalculate('p1', 'negro');">Negro</button>
+			</div>
+			<div class="col-sm-6 col-md-4 p-2 d-grid gap-2">
+				<button type="button" class="btn btn-info p1"value="azulclaro" onclick="selectAndCalculate('p1', 'azulclaro');">Azul Claro</button>
+			</div>
+		</div>
+		<br><br>
+		<h1>¿Cuál de estos animales es tu favorito?</h1>
+		<p class="lead">Elige el animal al cual le tengas más aprecio</p>
+		<div class="row">
+			<div class="col-sm-6 col-md-3 p-2 d-grid gap-2">
+				<button type="button" class="btn btnMarron p2" value="perro" onclick="selectAndCalculate('p2', 'perro');">Perro</button>
+			</div>
+			<div class="col-sm-6 col-md-3 p-2 d-grid gap-2">
+				<button type="button" class="btn btnTeal p2" value="gato" onclick="selectAndCalculate('p2', 'gato');">Gato</button>
+			</div>
+			<div class="col-sm-6 col-md-3 p-2 d-grid gap-2">
+				<button type="button" class="btn btnVioleta p2" value="loro" onclick="selectAndCalculate('p2', 'loro');">Loro</button>
+			</div>
+			<div class="col-sm-6 col-md-3 p-2 d-grid gap-2">
+				<button type="button" class="btn btnNaranja p2" value="ninguno" onclick="selectAndCalculate('p2', 'ninguno');">Ninguno</button>
+			</div>
+		</div>
+		<br><br>
+		<h1>Elige el árbol que más te guste</h1>
+		<p class="lead">Elige el árbol que más te represente</p>
+		<div class="row">
+			<div class="col-sm-6 col-md-3 p-2 d-grid gap-2">
+				<button type="button" class="btn p3" value="verde" title="Roble" onclick="selectAndCalculate('p3', 'verde');"><img src="./images/arboles/arbol_1.png" class="img-fluid"></button>
+			</div>
+			<div class="col-sm-6 col-md-3 p-2 d-grid gap-2">
+				<button type="button" class="btn p3" value="verdeoscuro" title="Pino" onclick="selectAndCalculate('p3', 'verdeoscuro');"><img src="./images/arboles/arbol_2.png" class="img-fluid"></button>
+			</div>
+			<div class="col-sm-6 col-md-3 p-2 d-grid gap-2">
+				<button type="button" class="btn p3" value="verdeazulado" title="Acacia" onclick="selectAndCalculate('p3', 'verdeazulado');"><img src="./images/arboles/arbol_3.png" class="img-fluid"></button>
+			</div>
+			<div class="col-sm-6 col-md-3 p-2 d-grid gap-2">
+				<button type="button" class="btn p3" value="naranja" title="Albaricoquero" onclick="selectAndCalculate('p3', 'naranja');"><img src="./images/arboles/arbol_4.png" class="img-fluid"></button>
+			</div>
+		</div>
+		<br><br>
+		<h1>¿Te gustan las frutas?</h1>
+		<p class="lead">Elige tu fruta favorita</p>
+		<div class="row">
+			<div class="col-sm-6 col-md-3 p-2 d-grid gap-2">
+				<button type="button" class="btn p4" value="manzana" title="Manzana" onclick="selectAndCalculate('p4', 'manzana');"><img src="./images/frutas/apple.png" class="img-fluid"></button>
+			</div>
+			<div class="col-sm-6 col-md-3 p-2 d-grid gap-2">
+				<button type="button" class="btn p4" value="pera" title="Pera" onclick="selectAndCalculate('p4', 'pera');"><img src="./images/frutas/pear.png" class="img-fluid"></button>
+			</div>
+			<div class="col-sm-6 col-md-3 p-2 d-grid gap-2">
+				<button type="button" class="btn p4" value="coco" title="Coco" onclick="selectAndCalculate('p4', 'coco');"><img src="./images/frutas/coconut.png" class="img-fluid"></button>
+			</div>
+			<div class="col-sm-6 col-md-3 p-2 d-grid gap-2">
+				<button type="button" class="btn p4" value="kiwi" title="Kiwi" onclick="selectAndCalculate('p4', 'kiwi');"><img src="./images/frutas/kiwi.png" class="img-fluid"></button>
+			</div>
+			<div class="col-sm-6 col-md-3 p-2 d-grid gap-2">
+				<button type="button" class="btn p4" value="naranja" title="Naranja" onclick="selectAndCalculate('p4', 'naranja');"><img src="./images/frutas/orange.png" class="img-fluid"></button>
+			</div>
+			<div class="col-sm-6 col-md-3 p-2 d-grid gap-2">
+				<button type="button" class="btn p4" value="fresas" title="Fresas" onclick="selectAndCalculate('p4', 'fresas');"><img src="./images/frutas/strawberry.png" class="img-fluid"></button>
+			</div>
+			<div class="col-sm-6 col-md-3 p-2 d-grid gap-2">
+				<button type="button" class="btn p4" value="sandia" title="Sandía" onclick="selectAndCalculate('p4', 'sandia');"><img src="./images/frutas/watermelon.png" class="img-fluid"></button>
+			</div>
+			<div class="col-sm-6 col-md-3 p-2 d-grid gap-2">
+				<button type="button" class="btn p4" value="platano" title="Plátanos" onclick="selectAndCalculate('p4', 'platano');"><img src="./images/frutas/banana.png" class="img-fluid"></button>
+			</div>
+		</div>
+		<br><br>
+		<h1>¿Cuál de estas consolas es tu favorita?</h1>
+		<p class="lead">Con cual de estas consolas te pasas las horas tirado en el sofa</p>
+		<div class="row">
+			<div class="col-sm-6 col-md-3 p-2 d-grid gap-2">
+				<button type="button" class="btn p5" value="gameboy" title="Nintendo GameBoy" onclick="selectAndCalculate('p5', 'gameboy');"><img src="./images/consolas/gameboy.png" class="img-fluid"></button>
+			</div>
+			<div class="col-sm-6 col-md-3 p-2 d-grid gap-2">
+				<button type="button" class="btn p5" value="play" title="PlayStation 4" onclick="selectAndCalculate('p5', 'play');"><img src="./images/consolas/play.png" class="img-fluid"></button>
+			</div>
+			<div class="col-sm-6 col-md-3 p-2 d-grid gap-2">
+				<button type="button" class="btn p5" value="xbox" title="Xbox One" onclick="selectAndCalculate('p5', 'xbox');"><img src="./images/consolas/xbox.png" class="img-fluid"></button>
+			</div>
+			<div class="col-sm-6 col-md-3 p-2 d-grid gap-2">
+				<button type="button" class="btn p5" value="switch" title="Nintendo Switch" onclick="selectAndCalculate('p5', 'switch');"><img src="./images/consolas/switch.png" class="img-fluid"></button>
+			</div>
+		</div>
+		<div id="contenedorBotones" align="center" class="invisible m-3">
+			<button type="button" id="botonMostrarRes" class="btn btn-outline-primary m-2" onclick="showRes();">Mostrar Resultado</button>
+			<button type="button" id="botonReload" class="btn btn-outline-success m-2" onclick="reloadAndToTop();">Hacer Test de Nuevo</button>
+		</div>
+		<div class="modal fade" id="modalRes" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		  <div class="modal-dialog">
+		    <div class="modal-content">
+		      <div class="modal-header">
+		        <h5 class="modal-title" id="modalLabel">¿Qué personaje de Jujutsu Kaisen eres?</h5>
+		        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+		      </div>
+		      <div class="modal-body">
+		        <img id="imagenRes" class="img-fluid" src="">
+		        <h4 id="tituloRes" class="mt-2"></h4>
+		        <p id="cuerpoRes" class="lead"></p>
+		      </div>
+		      <div class="modal-footer">
+		        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cerrar</button>
+		      </div>
+		    </div>
+		  </div>
+		</div>
+	</div>
+</body>
+<script type="text/javascript" src="script_testbuzzfeed.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</html>

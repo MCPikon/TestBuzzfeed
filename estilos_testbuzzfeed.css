@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+.btnMarron {
+	color: white;
+	background-color: #663300;
+	border-color: #663300;
+}
+.btnMarron:hover {
+	color: white;
+	background-color: #804000;
+	border-color: #804000;
+}
+
+.btnTeal {
+	color: white;
+	background-color: #008080;
+	border-color: #006666;
+}
+.btnTeal:hover {
+	color: white;
+	background-color: #006666;
+	border-color: #006666;
+}
+
+.btnVioleta {
+	color: white;
+	background-color: #4c2882;
+	border-color: #4c2882;
+}
+.btnVioleta:hover {
+	color: white;
+	background-color: #3d2068;
+	border-color: #3d2068;
+}
+
+.btnNaranja {
+	color: white;
+	background-color: #CA6F1E;
+	border-color: #CA6F1E;
+}
+.btnNaranja:hover {
+	color: white;
+	background-color: #E67E22;
+	border-color: #E67E22;
+}
+
+#modalLabel {
+	font-family: 'Dosis', sans-serif;
+	font-weight: 600;
+}
+
+#tituloRes {
+	font-family: 'Dosis', sans-serif;
+	font-weight: 600;
+}
+
+#cuerpoRes {
+	font-family: 'Dosis', sans-serif;
+	font-weight: 400;
+}
+
+#mainTitulo {
+	font-family: 'Noto Sans JP', sans-serif;
+}
+
+#mainSubTitulo {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+	font-size: 22px;
+}
+
+button {
+	font-family: 'Noto Sans JP', sans-serif;
+}
+
+h1 {
+	font-family: 'Lato', sans-serif;
+}
+
+p {
+	font-family: 'Open Sans', sans-serif;
+}
